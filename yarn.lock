@@ -2161,10 +2161,10 @@ eslint-config-prettier@^9.0.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.0.0.tgz#eb25485946dd0c66cd216a46232dc05451518d1f"
   integrity sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==
 
-eslint-config-ts-prefixer@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-ts-prefixer/-/eslint-config-ts-prefixer-1.0.2.tgz#b6dac882ae120e47741f71c65d5ba1de82991baf"
-  integrity sha512-0in2z8BzZSBgbPboWn5AtC8OKJeiDP4+gWKvdosA97IcZSuu7L5ZJhahxV9Ga+7zwejbAqHFbK7lO/B8xa5Y/A==
+eslint-config-ts-prefixer@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-ts-prefixer/-/eslint-config-ts-prefixer-1.2.0.tgz#6c05e071b3e4d4da8f03f77a7556db45c1319e7b"
+  integrity sha512-mJ/PwcBrzzyVoJR2wQNWugGS3rpI541CcSsesblWlCMYJSI7SI7GMowuShDw7BWCeNe+bxA9pKQWC8h3xs3zDw==
   dependencies:
     "@inquirer/prompts" "^3.0.3"
     commander "^11.0.0"
