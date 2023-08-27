@@ -25,6 +25,8 @@ const Spinner: React.FC<React.PropsWithChildren<SpinnerProps>> = memo(
       <>
         <svg
           className={clsx(
+            'mx-auto',
+            'my-10',
             'animate-spin',
             sizes[size],
             variants[variant],

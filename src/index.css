@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  @apply bg-custom-light-background dark:bg-netflix-dark-background text-custom-light-text dark:text-netflix-dark-text;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

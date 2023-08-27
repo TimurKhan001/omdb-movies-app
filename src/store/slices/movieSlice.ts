@@ -35,11 +35,16 @@ export type Movie = {
   Response?: string
 }
 
-export type MovieResponse = {
-  Search: Movie[]
-  totalResults: string
-  Response: string
-}
+export type MovieResponse =
+  | {
+      Search: Movie[]
+      totalResults: string
+      Response: string
+    }
+  | {
+      Response: string
+      Error: string
+    }
 
 type MovieState = {
   data?: MovieResponse
@@ -51,6 +56,18 @@ const initialState: MovieState = {
   data: undefined,
   error: undefined,
   loading: false,
+}
+
+export const isErrorType = (
+  response: MovieResponse,
+): response is { Response: string; Error: string } => {
+  return 'Error' in response
+}
+
+export const isSuccessfulResponse = (
+  response: MovieResponse,
+): response is { Search: Movie[]; totalResults: string; Response: string } => {
+  return 'Search' in response
 }
 
 const movieSlice = createSlice({
@@ -66,7 +83,13 @@ const movieSlice = createSlice({
       .addMatcher(
         movieApi.endpoints.getMoviesBySearch.matchFulfilled,
         (state, action) => {
-          state.data = action.payload
+          if (isSuccessfulResponse(action.payload)) {
+            state.data = action.payload
+            state.error = undefined
+          } else if (isErrorType(action.payload)) {
+            state.error = action.payload.Error
+            state.data = undefined
+          }
           state.loading = false
         },
       )
