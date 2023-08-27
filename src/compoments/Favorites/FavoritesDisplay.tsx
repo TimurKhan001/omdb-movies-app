@@ -15,6 +15,10 @@ const FavoritesDisplay: React.FC = () => {
     dispatch(removeFavorite(id))
   }
 
+  if (favorites.length === 0) {
+    return <h3 className="text-center my-4">Nothing here</h3>
+  }
+
   return (
     <MovieGrid>
       {favorites.map((movie) => (
