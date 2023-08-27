@@ -54,6 +54,16 @@ const MovieSearchContainer: React.FC = () => {
     }
   }, [movies])
 
+  useEffect(() => {
+    const isFullPage =
+      document.documentElement.scrollHeight >
+      document.documentElement.clientHeight
+
+    if (!isFullPage && !isLoading) {
+      dispatch(setCurrentPage(currentPage + 1))
+    }
+  }, [searchResults, isLoading])
+
   const handleSearchClick = () => {
     if (!inputRef.current) return
 
