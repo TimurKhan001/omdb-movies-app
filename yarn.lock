@@ -618,14 +618,14 @@
     picocolors "^1.0.0"
     tslib "^2.6.0"
 
-"@reduxjs/toolkit@^2.0.0-alpha.6":
-  version "2.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-2.0.0-beta.0.tgz#c7c75e39fc4b64dde8ac28f56b85d8dad7180b0d"
-  integrity sha512-CdtzVdSpnVVmXKITF78mlc2sFbhjxc57yMlfmaE/1EBF7yKXlKOxGP2CY8uwXccU7QPp4j4/pgWiDniDiqquYA==
+"@reduxjs/toolkit@^2.0.0-beta.1":
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-2.0.0-beta.1.tgz#5583c03d9acb018c9cef9d7a16b1eab439fde4e5"
+  integrity sha512-p7pC/mx9WNtMyYXoASO7rY5rTXzYylnVSABhzV2Of/rVRKdKRRZPGjP7CkL0cQolJlSoQxtVvz4E5Ifz8Ulvhg==
   dependencies:
     immer "^10.0.2"
-    redux "5.0.0-beta.0"
-    redux-thunk "3.0.0-alpha.3"
+    redux "^5.0.0-beta.0"
+    redux-thunk "^3.0.0-beta.0"
     reselect "^5.0.0-alpha.2"
 
 "@remix-run/router@1.8.0":
@@ -4216,12 +4216,12 @@ redux-first-history@^5.1.1:
   resolved "https://registry.yarnpkg.com/redux-first-history/-/redux-first-history-5.1.1.tgz#6aec4a3eaa52dbaaf2683776324d9219b182fab4"
   integrity sha512-ujVHv+y9wC2rqavS5tLiSu6zkw+VYrEea+/ggwVTRuutadEtwxSRlaK19ry/PTLSQtFuUF1Xu+plL5erD4roVw==
 
-redux-thunk@3.0.0-alpha.3:
-  version "3.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-3.0.0-alpha.3.tgz#b3762c7e6939d1cf56fbacba679d3c7101f115f6"
-  integrity sha512-tRoYt//uXllaNHsdla4sFbCPf0/50BYf6NDRNtg66IZXZcLXiQNTH5LKcIISd0+7BZqFq204JgJcxtih4QLTXQ==
+redux-thunk@^3.0.0-beta.0:
+  version "3.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-3.0.0-beta.0.tgz#3c8086a00657b12ca9615e57796ed56747eea07a"
+  integrity sha512-BLed4FtBhPv52AgqeR7DiOhrDA8z6owqXOkObOqgl1kwq4QQ1T74dy32qxyWsdyAlvq9wAHHW6t4tlxz8XnFhA==
 
-redux@5.0.0-beta.0:
+redux@5.0.0-beta.0, redux@^5.0.0-beta.0:
   version "5.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/redux/-/redux-5.0.0-beta.0.tgz#166684e56effbab9b4f6e2a1a79c6c21ee983f01"
   integrity sha512-RHSGHIiJ+1nkuve0daeveubiEdloy+DkYkP63uHk2FHpP18kb5umytsPU8TY8Lw8sLjL1eFg0DD5yf99ry/JhA==
