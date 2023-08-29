@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
 
 import { localStorageMiddleware } from './localStorageMiddleware'
+import appDataReducer from './slices/appData'
 import favoritesReducer from './slices/favoritesSlice'
 import { movieApi } from './slices/movieApi'
 import movieReducer from './slices/movieSlice'
@@ -15,8 +16,9 @@ export const store = configureStore({
       .concat(movieApi.middleware)
       .concat(localStorageMiddleware),
   reducer: {
-    favorites: favoritesReducer,
+    appData: appDataReducer,
     [movieApi.reducerPath]: movieApi.reducer,
+    favorites: favoritesReducer,
     movie: movieReducer,
     searchResults: searchResultsReducer,
   },

@@ -4,3 +4,8 @@ build
 dist
 .github
 .idea
+vite.config.ts
+vitest.config.ts
+tailwind.config.js
+prettier.config.js
+postcss.config.js

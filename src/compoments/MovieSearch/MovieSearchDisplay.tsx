@@ -1,14 +1,14 @@
 import React, { forwardRef } from 'react'
 
 import type { MovieResponse } from '../../store/slices/movieSlice'
+import Spinner from '../misc/Spinner'
 import MovieCard from '../MovieCard'
 import MovieGrid from '../MovieGrid'
-import Spinner from '../Spinner'
 
 type MovieSearchDisplayProps = {
   handleSearchClick: () => void
   isLoading: boolean
-  error: string
+  error: string | false | undefined
   movies?: Partial<MovieResponse>
   inputValue?: string
   totalResults?: string | undefined
@@ -46,8 +46,7 @@ const MovieSearchDisplay = forwardRef<
             type="text"
             id="searchTerm"
             placeholder="Enter movie title"
-            pattern=".{3,}" // This regex means "match any character, a minimum of 2 times, and no upper limit."
-            title="Please enter at least 3 characters."
+            required
           />
           <button
             className="py-1 px-2 bg-blue-500 text-white rounded hover:bg-blue-600 dark:bg-red-500 dark:hover:bg-red-600"

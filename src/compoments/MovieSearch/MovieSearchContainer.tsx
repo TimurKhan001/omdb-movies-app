@@ -46,6 +46,11 @@ const MovieSearchContainer: React.FC = () => {
     },
   )
 
+  const maxPages =
+    movies && 'Search' in movies ? Math.ceil(+movies.totalResults / 10) : 10
+
+  console.log(maxPages)
+
   useEffect(() => {
     if (movies && 'Search' in movies && movies.Search) {
       const combinedMovies = [...searchResults, ...movies.Search]
@@ -81,7 +86,8 @@ const MovieSearchContainer: React.FC = () => {
       if (
         window.innerHeight + document.documentElement.scrollTop !==
           document.documentElement.offsetHeight ||
-        fetching.current
+        fetching.current ||
+        currentPage === maxPages
       ) {
         return
       }

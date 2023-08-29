@@ -12,7 +12,7 @@ const initialState: SearchResultsState = {
   currentPage: 1,
   lastFetchedPage: 0,
   results: [],
-  searchTerm: '', // Initialize to 0 since no pages are fetched initially
+  searchTerm: '',
 }
 
 const searchResultsSlice = createSlice({
@@ -23,7 +23,7 @@ const searchResultsSlice = createSlice({
       state.results = []
       state.searchTerm = ''
       state.currentPage = 1
-      state.lastFetchedPage = 0 // Reset to 0
+      state.lastFetchedPage = 0
     },
     setCurrentPage: (state, action: PayloadAction<number>) => {
       state.currentPage = action.payload

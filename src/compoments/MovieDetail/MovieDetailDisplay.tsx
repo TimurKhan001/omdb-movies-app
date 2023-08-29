@@ -5,8 +5,8 @@ import { ReactComponent as FavoriteIcon } from '../../assets/favorite.svg'
 import { addFavorite } from '../../store/slices/favoritesSlice'
 import type { Movie } from '../../store/slices/movieSlice'
 import type { RootState } from '../../store/store'
-import Button from '../Button'
-import Spinner from '../Spinner'
+import Button from '../misc/Button'
+import Spinner from '../misc/Spinner'
 
 type MovieDetailDisplayProps = {
   movieDetail?: Movie
@@ -68,7 +68,7 @@ const MovieDetailDisplay: React.FC<MovieDetailDisplayProps> = ({
               handleClick={handleAddToFavorites}
             />
           ) : (
-            <FavoriteIcon className="w-10 h-10 md:ml-4 mb-4" />
+            <FavoriteIcon className="w-10 h-10 md:ml-4 mb-4 dark:fill-white" />
           )}
           <span className="text-xl font-semibold">{movieDetail.Year}</span>
         </div>

@@ -1,0 +1,234 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App Component > renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="bg-custom-light-background dark:bg-netflix-dark-background p-4"
+      >
+        <ul
+          class="flex justify-between items-center text-custom-light-text dark:text-netflix-dark-text"
+        >
+          <div
+            class="flex space-x-6"
+          >
+            <li>
+              <a
+                class="hover:underline"
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                class="hover:underline"
+                href="/favorites"
+              >
+                Favorites
+              </a>
+            </li>
+          </div>
+          <div
+            class="flex row-auto justify-start align-baseline"
+          >
+            <span
+              class="mr-4"
+            >
+              Light
+            </span>
+            <div
+              aria-pressed="false"
+              class="cursor-pointer w-12 h-6 flex items-center rounded-full p-1 bg-gray-300"
+              data-testid="dark-mode-toggle"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="transition-all duration-300 ease-in-out transform scale-100 bg-white w-5 h-5 rounded-full translate-x-0"
+              />
+            </div>
+            <span
+              class="ml-4"
+            >
+              Dark
+            </span>
+          </div>
+        </ul>
+      </nav>
+      <div
+        class="space-y-2 p-6 dark:text-gray-300"
+      >
+        <label
+          class="block text-gray-500 dark:text-gray-400 text-sm"
+          for="searchTerm"
+        >
+          Search for a movie:
+        </label>
+        <form
+          class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4"
+        >
+          <input
+            class="px-2 py-1 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            id="searchTerm"
+            pattern=".{3,}"
+            placeholder="Enter movie title"
+            title="Please enter at least 3 characters."
+            type="text"
+            value=""
+          />
+          <button
+            class="py-1 px-2 bg-blue-500 text-white rounded hover:bg-blue-600 dark:bg-red-500 dark:hover:bg-red-600"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 py-12"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="bg-custom-light-background dark:bg-netflix-dark-background p-4"
+    >
+      <ul
+        class="flex justify-between items-center text-custom-light-text dark:text-netflix-dark-text"
+      >
+        <div
+          class="flex space-x-6"
+        >
+          <li>
+            <a
+              class="hover:underline"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:underline"
+              href="/favorites"
+            >
+              Favorites
+            </a>
+          </li>
+        </div>
+        <div
+          class="flex row-auto justify-start align-baseline"
+        >
+          <span
+            class="mr-4"
+          >
+            Light
+          </span>
+          <div
+            aria-pressed="false"
+            class="cursor-pointer w-12 h-6 flex items-center rounded-full p-1 bg-gray-300"
+            data-testid="dark-mode-toggle"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="transition-all duration-300 ease-in-out transform scale-100 bg-white w-5 h-5 rounded-full translate-x-0"
+            />
+          </div>
+          <span
+            class="ml-4"
+          >
+            Dark
+          </span>
+        </div>
+      </ul>
+    </nav>
+    <div
+      class="space-y-2 p-6 dark:text-gray-300"
+    >
+      <label
+        class="block text-gray-500 dark:text-gray-400 text-sm"
+        for="searchTerm"
+      >
+        Search for a movie:
+      </label>
+      <form
+        class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4"
+      >
+        <input
+          class="px-2 py-1 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+          id="searchTerm"
+          pattern=".{3,}"
+          placeholder="Enter movie title"
+          title="Please enter at least 3 characters."
+          type="text"
+          value=""
+        />
+        <button
+          class="py-1 px-2 bg-blue-500 text-white rounded hover:bg-blue-600 dark:bg-red-500 dark:hover:bg-red-600"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 py-12"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
